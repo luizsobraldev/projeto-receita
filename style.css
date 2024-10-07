@@ -1,0 +1,77 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Alice', sans-serif;
+  line-height: 150%;
+}
+
+:root{
+  --surface-color: #F0E8C2;
+  --text-color-primary: #291B1A;
+  --text-color-secondary: #573A37;
+  --bg-color: #573824;
+  --text-color-on-bg: #F0E8C2;
+}
+
+body{
+  background-image: url(./img/bg.jpg);
+  background-size: cover;
+}
+
+#page{
+  width: 800px;
+  padding: 24px;
+  background-color: var(--surface-color);
+  border-radius: 24px;
+  margin: 48px auto;
+}
+
+#page img{
+  border-radius: 16px;
+}
+
+main{
+  padding: 24px;
+}
+
+main p + p{ /* pegue um p que tem um p anterior a ele*/
+  margin-top: 12px;
+}
+
+section + section{
+  margin-top: 24px;
+}
+
+#about h1{
+  font-size: 40px;
+  line-height: 140%;
+  color: var(--text-color-primary);
+  margin-bottom: 4px;
+}
+
+#about h2{
+  font-size: 24px;
+  color: var(--text-color-primary);
+  margin-bottom: 4px;
+}
+
+#ingredients ul{
+  padding-left: 20px;
+}
+
+p, li{
+  color: var(--text-color-secondary);
+}
+
+footer{
+  margin-top: 28px;
+  margin-bottom: 48px;
+  color: var(--text-color-on-bg);
+  text-align: center;
+}
+
+footer img{
+  vertical-align:middle;
+}
+
